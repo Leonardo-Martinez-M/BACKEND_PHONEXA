@@ -82,3 +82,15 @@ model AeronauticalAlphabetCard {
 
   @@map("aeronauticalAlphabetCards")
 }
+
+// memoryQuiz - Tabla para el juego de memoria
+model MemoryQuiz {
+  id           Int     @id @default(autoincrement()) @map("id")
+  answer       String  @db.VarChar(255)
+  imgUnoUrl    String  @db.VarChar(2048)
+  imgDosUrl    String  @db.VarChar(2048)
+  imgTresUrl   String  @db.VarChar(2048)
+  imgCuatroUrl String  @db.VarChar(2048)
+
+  @@map("memoryQuiz")
+}

@@ -184,6 +184,227 @@ async function main() {
   }
   console.log('✅ Tarjetas creadas');
 
+  const memoryQuiz = [
+    {
+      id: 1,
+      answer: 'a',
+      imgUnoUrl: `${baseUrl}/img/alpha/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/alpha/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/alpha/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/alpha/cuatro.jpg`,
+    },
+    {
+      id: 2,
+      answer: 'b',
+      imgUnoUrl: `${baseUrl}/img/bravo/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/bravo/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/bravo/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/bravo/cuatro.jpg`,
+    },
+    {
+      id: 3,
+      answer: 'c',
+      imgUnoUrl: `${baseUrl}/img/charlie/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/charlie/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/charlie/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/charlie/cuatro.jpg`,
+    },
+    {
+      id: 4,
+      answer: 'd',
+      imgUnoUrl: `${baseUrl}/img/delta/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/delta/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/delta/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/delta/cuatro.jpg`,
+    },
+    {
+      id: 5,
+      answer: 'e',
+      imgUnoUrl: `${baseUrl}/img/echo/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/echo/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/echo/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/echo/cuatro.jpg`,
+    },
+    {
+      id: 6,
+      answer: 'f',
+      imgUnoUrl: `${baseUrl}/img/foxtrot/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/foxtrot/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/foxtrot/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/foxtrot/cuatro.jpg`,
+    },
+    {
+      id: 7,
+      answer: 'g',
+      imgUnoUrl: `${baseUrl}/img/golf/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/golf/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/golf/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/golf/cuatro.jpg`,
+    },
+    {
+      id: 8,
+      answer: 'h',
+      imgUnoUrl: `${baseUrl}/img/hotel/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/hotel/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/hotel/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/hotel/cuatro.jpg`,
+    },
+    {
+      id: 9,
+      answer: 'i',
+      imgUnoUrl: `${baseUrl}/img/india/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/india/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/india/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/india/cuatro.jpg`,
+    },
+    {
+      id: 10,
+      answer: 'j',
+      imgUnoUrl: `${baseUrl}/img/juliet/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/juliet/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/juliet/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/juliet/cuatro.jpg`,
+    },
+    {
+      id: 11,
+      answer: 'k',
+      imgUnoUrl: `${baseUrl}/img/kilo/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/kilo/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/kilo/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/kilo/cuatro.jpg`,
+    },
+    {
+      id: 12,
+      answer: 'l',
+      imgUnoUrl: `${baseUrl}/img/lima/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/lima/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/lima/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/lima/cuatro.jpg`,
+    },
+    {
+      id: 13,
+      answer: 'm',
+      imgUnoUrl: `${baseUrl}/img/mike/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/mike/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/mike/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/mike/cuatro.jpg`,
+    },
+    {
+      id: 14,
+      answer: 'n',
+      imgUnoUrl: `${baseUrl}/img/november/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/november/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/november/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/november/cuatro.jpg`,
+    },
+    {
+      id: 15,
+      answer: 'o',
+      imgUnoUrl: `${baseUrl}/img/oscar/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/oscar/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/oscar/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/oscar/cuatro.jpg`,
+    },
+    {
+      id: 16,
+      answer: 'p',
+      imgUnoUrl: `${baseUrl}/img/papa/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/papa/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/papa/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/papa/cuatro.jpg`,
+    },
+    {
+      id: 17,
+      answer: 'q',
+      imgUnoUrl: `${baseUrl}/img/quebec/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/quebec/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/quebec/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/quebec/cuatro.jpg`,
+    },
+    {
+      id: 18,
+      answer: 'r',
+      imgUnoUrl: `${baseUrl}/img/romeo/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/romeo/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/romeo/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/romeo/cuatro.jpg`,
+    },
+    {
+      id: 19,
+      answer: 's',
+      imgUnoUrl: `${baseUrl}/img/sierra/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/sierra/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/sierra/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/sierra/cuatro.jpg`,
+    },
+    {
+      id: 20,
+      answer: 't',
+      imgUnoUrl: `${baseUrl}/img/tango/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/tango/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/tango/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/tango/cuatro.jpg`,
+    },
+    {
+      id: 21,
+      answer: 'u',
+      imgUnoUrl: `${baseUrl}/img/uniform/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/uniform/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/uniform/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/uniform/cuatro.jpg`,
+    },
+    {
+      id: 22,
+      answer: 'v',
+      imgUnoUrl: `${baseUrl}/img/victor/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/victor/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/victor/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/victor/cuatro.jpg`,
+    },
+    {
+      id: 23,
+      answer: 'w',
+      imgUnoUrl: `${baseUrl}/img/whiskey/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/whiskey/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/whiskey/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/whiskey/cuatro.jpg`,
+    },
+    {
+      id: 24,
+      answer: 'x',
+      imgUnoUrl: `${baseUrl}/img/xray/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/xray/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/xray/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/xray/cuatro.jpg`,
+    },
+    {
+      id: 25,
+      answer: 'y',
+      imgUnoUrl: `${baseUrl}/img/yankee/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/yankee/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/yankee/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/yankee/cuatro.jpg`,
+    },
+    {
+      id: 26,
+      answer: 'z',
+      imgUnoUrl: `${baseUrl}/img/zulu/uno.jpg`,
+      imgDosUrl: `${baseUrl}/img/zulu/dos.jpg`,
+      imgTresUrl: `${baseUrl}/img/zulu/tres.jpg`,
+      imgCuatroUrl: `${baseUrl}/img/zulu/cuatro.jpg`,
+    },
+  ];
+
+  console.log('🧩 Creando datos de memory quiz...');
+  for (const quiz of memoryQuiz) {
+    const existingQuiz = await prisma.memoryQuiz.findUnique({
+      where: { id: quiz.id },
+    });
+    if (!existingQuiz) {
+      await prisma.memoryQuiz.create({ data: quiz });
+    }
+  }
+
   // Preguntas del quiz
   const quizQuestions = [
     {

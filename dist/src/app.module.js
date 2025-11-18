@@ -18,6 +18,7 @@ const aeronautical_alphabet_module_1 = require("./apps/aeronautical-alphabet/aer
 const serve_static_1 = require("@nestjs/serve-static");
 const path_1 = require("path");
 const politicas_module_1 = require("./politicas/politicas.module");
+const memory_module_1 = require("./apps/memory/memory.module");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
@@ -42,6 +43,7 @@ exports.AppModule = AppModule = __decorate([
             login_module_1.LoginModule,
             auth_module_1.AuthModule,
             aeronautical_alphabet_module_1.AeronauticalAlphabetModule,
+            memory_module_1.MemoryModule,
             politicas_module_1.PoliticasModule,
         ],
         controllers: [app_controller_1.AppController],

@@ -22,7 +22,7 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.IsEmail)(),
     (0, swagger_1.ApiProperty)({
-        example: 'prueba@ejemplo.com',
+        example: 'dos@gmail.com',
         description: 'Email del usuario',
         format: 'email',
     }),
@@ -33,7 +33,7 @@ __decorate([
     (0, class_validator_1.IsNotEmpty)(),
     (0, class_validator_1.MinLength)(8),
     (0, swagger_1.ApiProperty)({
-        example: 'contraseña123',
+        example: 'Admin1234',
         description: 'Contraseña del usuario',
         minLength: 8,
     }),
