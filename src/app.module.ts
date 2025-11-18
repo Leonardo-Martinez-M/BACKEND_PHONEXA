@@ -9,6 +9,7 @@ import { AeronauticalAlphabetModule } from './apps/aeronautical-alphabet/aeronau
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { PoliticasModule } from './politicas/politicas.module';
+import { MemoryModule } from './apps/memory/memory.module';
 
 @Module({
   imports: [
@@ -33,6 +34,7 @@ import { PoliticasModule } from './politicas/politicas.module';
     LoginModule,
     AuthModule,
     AeronauticalAlphabetModule,
+    MemoryModule,
     PoliticasModule,
   ],
   controllers: [AppController],
