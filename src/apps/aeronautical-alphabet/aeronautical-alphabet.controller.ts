@@ -87,7 +87,7 @@ export class AeronauticalAlphabetController {
   }
 
   @Get()
-  @ApiBearerAuth()
+  //@ApiBearerAuth()
   @ApiOperation({
     summary: 'Obtener todas las tarjetas del alfabeto aeronáutico',
     description: 'Requiere autenticación.',
@@ -108,7 +108,7 @@ export class AeronauticalAlphabetController {
   }
 
   @Get(':id')
-  @ApiBearerAuth()
+  //@ApiBearerAuth()
   @ApiOperation({
     summary: 'Obtener una tarjeta por ID',
     description: 'Requiere autenticación.',
@@ -186,7 +186,7 @@ export class AeronauticalAlphabetController {
   }
 
   @Get('quiz/random')
-  @ApiBearerAuth()
+  //@ApiBearerAuth()
   @ApiOperation({
     summary: 'Obtener una pregunta de quiz aleatoria',
     description: 'Requiere autenticación.',
@@ -216,7 +216,7 @@ export class AeronauticalAlphabetController {
   }
 
   @Post('quiz/:id/check')
-  @ApiBearerAuth()
+  //@ApiBearerAuth()
   @ApiOperation({
     summary: 'Verificar respuesta del quiz',
     description: 'Requiere autenticación.',
