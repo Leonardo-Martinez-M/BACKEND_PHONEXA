@@ -404,6 +404,7 @@ async function main() {
       await prisma.memoryQuiz.create({ data: quiz });
     }
   }
+  console.log('✅ Memorama creado correctamente.');
 
   // Preguntas del quiz
   const quizQuestions = [
